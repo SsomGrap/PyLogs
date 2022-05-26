@@ -21,19 +21,20 @@ pip install PyLogs
 ## Functions
 A list of all functions in this package.
 ```
-pylogs.PyLogs()
+pylogs.Logger()
 
-pylogs.PyLogs.getFormat()
-pylogs.PyLogs.setFormat()
+pylogs.Logger.getFormat()
+pylogs.Logger.setFormat()
 
-pylogs.PyLogs.colorization()
-pylogs.PyLogs.terminalOutput()
-pylogs.PyLogs.fileOutput()
+pylogs.Logger.colorization()
+pylogs.Logger.terminalOutput()
+pylogs.Logger.fileOutput()
 
-pylogs.PyLogs.info()
-pylogs.PyLogs.warn()
-pylogs.PyLogs.error()
-pylogs.PyLogs.critical()
+pylogs.Logger.neutral()
+pylogs.Logger.info()
+pylogs.Logger.warn()
+pylogs.Logger.error()
+pylogs.Logger.critical()
 ```
 ***
 
