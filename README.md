@@ -18,8 +18,15 @@ pip install PyLogs
 ```
 ***
 
-## Functions
-A list of all functions in this package.
+## Functions and Constant
+A list of all functions and constant in this package.
+```
+pylogs.TYPE_NEUTRAL
+pylogs.TYPE_INFO
+pylogs.TYPE_WARN
+pylogs.TYPE_ERROR
+pylogs.TYPE_CRITICAL
+```
 ```
 pylogs.Logger()
 
@@ -41,9 +48,24 @@ pylogs.Logger.critical()
 ## Exemple
 An example of how to implement PyLogs to your projects
 ```
-import pylogs
+>>> import pylogs
+>>> logger = pylogs.Logger(name="MyLogger", directory="./logs")
+>>> logger.setFormat(pylogs.TYPE_INFO, "[Un truc] [Un second] "
+>>> logger.info("Connected")
 
-pylogs.PyLogs()
+# Create a log file named with the datetime of your computer
+# It contain the output
+[Un truc] [Un second] Connected
+
+>>> logger.fileOutput(False) # Turn off the file ouput for all logs
+>>> logger.neutral("A random message")
+A random message
+
+>>> logger.fileOutput(TYPE_CRITICAL, True) # Turn on the file output for the critical messages
+>>> logger.terminalOutput(TYPE_CRITICAL, False)
+>>> logger.critical("critical error")
+
+# The output will be in the logs file but not in the terminal (Only for the critical messages)
 ```
 ***
 
