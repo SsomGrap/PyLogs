@@ -50,7 +50,7 @@ An example of how to implement PyLogs to your projects
 ```
 >>> import pylogs
 >>> logger = pylogs.Logger(name="MyLogger", directory="./logs")
->>> logger.setFormat(pylogs.TYPE_INFO, "[Un truc] [Un second] "
+>>> logger.setFormat(pylogs.TYPE_INFO, "[Un truc] [Un second]"
 >>> logger.info("Connected")
 
 # Create a log file named with the datetime of your computer
