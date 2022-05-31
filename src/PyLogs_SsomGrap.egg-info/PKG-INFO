@@ -1,3 +1,18 @@
+Metadata-Version: 2.1
+Name: PyLogs-SsomGrap
+Version: 0.1.0
+Summary: A logging package for your python project
+Home-page: https://github.com/SsomGrap/PyLogs
+Author: SsomGrap
+Author-email: ssomgrap@gmail.com
+Project-URL: Bug Tracker, https://github.com/SsomGrap/PyLogs/issues
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
 # PyLogs
 ### A logging package for your python project
 ***
@@ -8,7 +23,7 @@ PyLogs allow you to add a logger to your python project. This logger can send th
 - the colorization of the text
 - etc...
 
-If you need help, go on my [GitHub](https://github.com/SsomGrap/PyLogs)
+GitHub : [hyperlink syntax](https://github.com/SsomGrap/PyLogs)
 
 Work on python 3 and 2. For Windows, macOS and Linux.
 ***

@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+setup.cfg
+src/PyLogs_SsomGrap.egg-info/PKG-INFO
+src/PyLogs_SsomGrap.egg-info/SOURCES.txt
+src/PyLogs_SsomGrap.egg-info/dependency_links.txt
+src/PyLogs_SsomGrap.egg-info/top_level.txt
+src/pylogs/__init__.py
+src/pylogs/main.py

@@ -39,7 +39,7 @@ class Logger:
             "critical": {"format": "", "colorization": False, "doTerminalOutput": True, "doFileOutput": True}
         }
         self.time = str(str(datetime.now()).replace(" ", "_").split(".").pop(0))
-        self.logFile = f"{directory}/{self.name}_{self.time}.log"
+        self.logFile = f"{directory}\\{self.name}_{self.time}.log"
 
     def getFormat(self, logType=""):
         """
