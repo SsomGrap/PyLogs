@@ -107,10 +107,10 @@ class Logger:
         :param text:
         """
         if self.logsDict["neutral"]["doTerminalOutput"]:
-            print(text)
+            print(str(text))
         if self.logsDict["neutral"]["doFileOutput"]:
             with open(self.logFile, "a") as logFile:
-                logFile.write(text)
+                logFile.write(str(text))
 
     def loggerPrint(self, logType, text):
         """
@@ -118,10 +118,10 @@ class Logger:
         :param text:
         """
         if self.logsDict[logType]["doTerminalOutput"]:
-            print(self.logsDict[logType]["format"], text)
+            print(str(self.logsDict[logType]["format"], text))
         if self.logsDict[logType]["doFileOutput"]:
             with open(self.logFile, "a") as logFile:
-                logFile.write(f"{self.logsDict[logType]['format']} {text}")
+                logFile.write(str(f"{self.logsDict[logType]['format']} {text}"))
 
     def info(self, text):
         """
